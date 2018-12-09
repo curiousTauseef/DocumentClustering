@@ -67,6 +67,7 @@ def vectorise_and_cluster(lang=None, num_clusters=None):
 
     tfidf_matrix = tfidf.fit_transform(tokenised)
 
+    # See tfidf scores
     print(tfidf_matrix)
 
     print("No. of features: {}".format(len(tfidf.get_feature_names())))
